@@ -1,14 +1,14 @@
-import { getUser } from '/src/scripts/services/user.js'
+import { getUser } from './services/user.js'
 // aqui estou importando a função user do arquivo user.js para poder usar nesse arquivo.
-import { getRepositories } from '/src/scripts/services/repositories.js'
+import { getRepositories } from './services/repositories.js'
 // aqui estou importando a função repositories do arquivo repositories.js para poder usar nesse arquivo e renomeando ela para repositories.
 
-import { getUserEvents } from '/src/scripts/services/events.js'
+import { getUserEvents } from './services/events.js'
 
 
-import { user } from '/src/scripts/objects/user.js'
+import { user } from './objects/user.js'
 
-import { screen } from '/src/scripts/objects/screen.js'
+import { screen } from './objects/screen.js'
 
 
 

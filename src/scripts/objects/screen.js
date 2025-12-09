@@ -1,4 +1,4 @@
-import { user } from '/src/scripts/objects/user.js'
+import { user } from '../objects/user.js'
 
 const screen = {
     userProfile: document.querySelector('.profile-data'),
