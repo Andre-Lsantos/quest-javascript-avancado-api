@@ -1,4 +1,4 @@
-import { baseURL, repositoriesQuantity } from '../variables'  // aqui estou importando as variaveis baseURL e repositoriesQuantity do arquivo variables.js para poder usar nesse arquivo.
+import { baseURL, repositoriesQuantity } from '../variables.js'  // aqui estou importando as variaveis baseURL e repositoriesQuantity do arquivo variables.js para poder usar nesse arquivo.
 
 
 
