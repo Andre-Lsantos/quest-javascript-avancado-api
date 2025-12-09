@@ -20,7 +20,7 @@ const screen = {
         this.renderRepositories();
         this.renderEvents();
     },
-   
+
 
     renderRepositories() {
         if (user.repositories.length === 0) return;
@@ -30,18 +30,18 @@ const screen = {
 
         user.repositories.forEach(repo => {
             repositoriesItens += `
-                 <li>
-            <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+       <li class="repo-card">
+        <strong class="repo-title">${repo.name}</strong>
 
-            <div class="repo-info">
-                <span>⭐ ${repo.stargazers_count}</span>
-                <span>🍴 ${repo.forks_count}</span>
-                <span>👀 ${repo.watchers_count}</span>
-                <span>💻 ${repo.language ?? 'Não definida'}</span>
-            </div>
-        </li>
+        <div class="repo-badges">
+            <span class="badge">🍴 ${repo.forks_count}</span>
+            <span class="badge">⭐ ${repo.stargazers_count}</span>
+            <span class="badge">👀 ${repo.watchers_count}</span>
+            <span class="badge">👨‍💻 ${repo.language ?? 'N/A'}</span>
+        </div>
+    </li>
             `
-            // aqui estou criando uma lista de repositórios com link para o repositório no GitHub.
+            // aqui estou criando uma lista de repositórios com link para o repositório no GitHub junto com a classe dentro aparecendo as watchers, forks, stars e linguagem do repositório e um efeito.
         });
 
         this.userProfile.innerHTML += `

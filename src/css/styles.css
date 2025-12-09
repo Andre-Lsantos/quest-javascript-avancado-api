@@ -194,5 +194,51 @@ main {
   }
 }
 
+.repo-card {
+  background: #ffffff;
+  border: 2px solid #E5E5E5;
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.10);
+}
+
+.repo-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.repo-badges {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  background: #8467f3;       
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* ficou alinhado do lado*/
+.repositories ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 
